@@ -1,0 +1,6 @@
+name "sdc"
+description "The stupid D compiler"
+copyright "Copyright © 2010-2016 Amaury Séchet, Bernard Helyer, Jakob Øvrum"
+authors "Amaury Séchet, Bernard Helyer, Jakob Øvrum"
+targetType "none"
+subPackage "libd"
