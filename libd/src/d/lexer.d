@@ -442,12 +442,12 @@ private:
 		
 		auto c = frontChar;
 		
-		static if (s == "\"") {
+		static if (s == "\"" || s == "`") {
 			mixin CharPumper!false;
 			
 			Pump: while(1) {
 				// TODO: check for unicode line break.
-				while(c != '\"') {
+				while(c != s[0]) {
 					putChar(lexEscapeChar());
 					c = frontChar;
 				}
